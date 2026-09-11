@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DisplayProperty CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            border: 2px solid blue;
+            display: inline-block;
+            width: 344px;
+            padding:45px;
+            margin: 34px; 
+        }
+
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+    </style>
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">also a nice box</div>
+
+    <span>I am a good</span>
+    <span>boy</span>
+     <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding:34px;
+            box-shadow:  5px 15px 5px #70a711;
+        }
+        .text-element { text-shadow: 10px 5px 3px #e695f7 }
+    </style>
+
+    <div class="box">
+        I am a box
+    </div>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, atque. Modi voluptatibus necessitatibus architecto quidem sit maiores, ad nesciunt et odit esse. Possimus, ipsam et molestiae eius quae nisi quisquam maiores fugiat aut fuga!
+    </p>
+     <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding:34px;
+            box-shadow:  5px 15px 5px #70a711;
+        }
+        .text-element { text-shadow: 10px 5px 3px #e695f7 }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, atque. Modi voluptatibus necessitatibus architecto quidem sit maiores, ad nesciunt et odit esse. Possimus, ipsam et molestiae eius quae nisi quisquam maiores fugiat aut fuga!
+    </p>
+     <title>CSS Lists</title>
+    <style>
+        nav ul li{
+            list-style: devanagari;
+            list-style-type: "🔥";
+            /* background-color: yellow; */
+            /* list-style-position: inside; */
+            border: 2px solid black;
+            /* list-style: disc inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+            /* list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+        }
+ 
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+     <title>Overflow</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            /* overflow: auto;
+            overflow-x: hidden;
+            overflow-y: scroll; */
+            overflow: auto hidden;
+            /* white-space: nowrap;
+            text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a good boy and I love to write Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta iure amet
+        unde voluptas nihil vero, maxime esse quis quos natus rem, earum aspernatur quasi aut ea commodi nostrum
+        voluptate! Sint rerum nostrum perferendis sapiente explicabo perspiciatis, ut magni? Aspernatur, provident
+        dolorum unde corporis doloribus rem!
+    </div>
+</body>
+</html>
