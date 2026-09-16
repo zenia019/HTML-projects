@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            background-color: pink;
+            height: 83px;
+        }
+
+        main {
+            background-color: black;
+            color: white;
+            padding: 34px;
+        }
+
+        .container {
+            background-color: green;
+            margin: 12px 34px;
+            padding: 55px 23px;
+            text-align: center;
+        }
+
+        .box1 {
+            background-color: palevioletred;
+            height: 70vh;
+            width: 45%;
+            display: inline-block;
+            margin: 0 12px;
+        }
+
+        .box2 {
+            background-color: blue;
+            height: 70vh;
+            width: 45%;
+            display: inline-block;
+            margin: 0 12px;
+        }
+
+        .text-box {
+            padding: 34px;
+            border: 2px solid white;
+            margin: 50px 34vw;
+            font-size: 2em;
+            border-radius: 13px;
+
+        }
+
+        .orange-box {
+            height: 32px;
+            width: 32px;
+            background: orange;
+            position: fixed;
+            bottom: 12px;
+            right: 23px;
+            border-radius: 60px;
+        }
+
+        footer {
+            height: 100px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+ <div class="wrap">
+    <!-- scaleX: Scales the element on the X-axis. -->
+    <div class="box">
+      <div class="blue scaleX">
+        scaleX
+      </div>
+    </div>
+    <!-- scaleY: Scales the element on the Y-axis. -->
+    <div class="box">
+      <div class="blue scaleY">
+        scaleY
+      </div>
+    </div>
+    <!-- scale: Scales the element on both the X-axis and Y-axis. -->
+    <div class="box">
+      <div class="blue scale">
+        scale
+      </div>
+    </div>
+    <!-- translateX: Moves the element along the X-axis. -->
+    <div class="box">
+      <div class="blue translateX">
+        translateX
+      </div>
+    </div>
+    <!-- translateY: Moves the element along the Y-axis. -->
+    <div class="box">
+      <div class="blue translateY">
+        translateY
+      </div>
+    </div>
+    <!-- translate: Moves the element along both the X-axis and Y-axis. -->
+    <div class="box">
+      <div class="blue translate">
+        translate
+      </div>
+    </div>
+    <!-- matrix: A 2D transformation method using a matrix of six values. -->
+    <div class="box">
+      <div class="blue matrix">
+        matrix
+      </div>
+    </div>
+    <!-- rotate: Rotates the element around the Z-axis. -->
+    <div class="box">
+      <div class="blue rotate">
+        rotate
+      </div>
+    </div>
+    <!-- skew: Skews the element on the X-axis and Y-axis. -->
+    <div class="box">
+      <div class="blue skew">
+        skew
+      </div>
+    </div>
+    <!-- skewX: Skews the element on the X-axis. -->
+    <div class="box">
+      <div class="blue skewX">
+        skewX
+      </div>
+    </div>
+    <!-- skewY: Skews the element on the Y-axis. -->
+    <div class="box">
+      <div class="blue skewY">
+        skewY
+      </div>
+    </div>
+    <!-- matrix3d: A 3D transformation method using a matrix of 16 values. -->
+    <div class="box">
+      <div class="blue matrix3d">
+        matrix3d
+      </div>
+    </div>
+    <!-- translate3d: Moves the element along the X-axis, Y-axis, and Z-axis. -->
+    <div class="box">
+      <div class="blue translate3d">
+        translate3d
+      </div>
+    </div>
+    <!-- rotateY: Rotates the element around the Y-axis. -->
+    <div class="box">
+      <div class="blue rotateY">
+        rotateY
+      </div>
+    </div>
+    <!-- rotateX: Rotates the element around the X-axis. -->
+    <div class="box">
+      <div class="blue rotateX">
+        rotateX
+      </div>
+    </div>
+    <!-- translateZ: Moves the element along the Z-axis. -->
+    <div class="box">
+      <div class="blue translateZ">
+        translateZ
+      </div>
+    </div>
+  </div>
+  <style>
+        .logo {  
+        }
+
+        .logo img{
+            width: 164px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: "Segoe UI";
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .right ul li span{
+            padding: 0 5px;
+        }
+
+    </style>
+    <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </li>
+                    <li><span>Pricing </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </li>
+                    <li><span>Resources </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </li>
+                    <li><span>About Us </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </li>
+                    <li>
+                        <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></div>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+
+        <div class="text-box">
+            <p>Welcome to Sigma Web Development Express</p>
+        </div>
+
+        <div class="orange-box">
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
